@@ -20,7 +20,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Account Info</title>
-    <!--/*/ <th:block th:include="fragments/head :: head"/> /*/-->
+    <!--/*/ <th:block th:replace="~{fragments/head :: #head}"/> /*/-->
 </head>
 <body>
 <div class="container">
@@ -33,7 +33,7 @@
     </form>
 
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--/*/ <th:block th:insert="~{fragments/head :: #footer-scripts}"/> /*/-->
 </body>
 </html>
